@@ -11,6 +11,10 @@
 		AEE2A4F72C06784B00AC3335 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A4F62C06784B00AC3335 /* ViewController.swift */; };
 		AEE2A4F92C06784C00AC3335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEE2A4F82C06784C00AC3335 /* Assets.xcassets */; };
 		AEE2A4FC2C06784C00AC3335 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AEE2A4FB2C06784C00AC3335 /* Base */; };
+		AEE2A5052C067B9200AC3335 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A5042C067B9200AC3335 /* EditorView.swift */; };
+		AEE2A5092C06801B00AC3335 /* EditorView+NSTextViewportLayoutControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A5082C06801B00AC3335 /* EditorView+NSTextViewportLayoutControllerDelegate.swift */; };
+		AEE2A50B2C06831A00AC3335 /* TextLayoutFragmentLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A50A2C06831A00AC3335 /* TextLayoutFragmentLayer.swift */; };
+		AEE2A50D2C06856D00AC3335 /* EditorView+CALayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A50C2C06856D00AC3335 /* EditorView+CALayerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		AEE2A4F82C06784C00AC3335 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEE2A4FB2C06784C00AC3335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEE2A4FD2C06784C00AC3335 /* Editor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Editor.entitlements; sourceTree = "<group>"; };
+		AEE2A5042C067B9200AC3335 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		AEE2A5082C06801B00AC3335 /* EditorView+NSTextViewportLayoutControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorView+NSTextViewportLayoutControllerDelegate.swift"; sourceTree = "<group>"; };
+		AEE2A50A2C06831A00AC3335 /* TextLayoutFragmentLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLayoutFragmentLayer.swift; sourceTree = "<group>"; };
+		AEE2A50C2C06856D00AC3335 /* EditorView+CALayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorView+CALayerDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 		AEE2A4F32C06784B00AC3335 /* Editor */ = {
 			isa = PBXGroup;
 			children = (
+				AEE2A5032C067B8200AC3335 /* EditorView */,
 				AEE2A4F42C06784B00AC3335 /* AppDelegate.swift */,
 				AEE2A4F62C06784B00AC3335 /* ViewController.swift */,
 				AEE2A4F82C06784C00AC3335 /* Assets.xcassets */,
@@ -59,6 +68,17 @@
 				AEE2A4FD2C06784C00AC3335 /* Editor.entitlements */,
 			);
 			path = Editor;
+			sourceTree = "<group>";
+		};
+		AEE2A5032C067B8200AC3335 /* EditorView */ = {
+			isa = PBXGroup;
+			children = (
+				AEE2A5042C067B9200AC3335 /* EditorView.swift */,
+				AEE2A5082C06801B00AC3335 /* EditorView+NSTextViewportLayoutControllerDelegate.swift */,
+				AEE2A50A2C06831A00AC3335 /* TextLayoutFragmentLayer.swift */,
+				AEE2A50C2C06856D00AC3335 /* EditorView+CALayerDelegate.swift */,
+			);
+			path = EditorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE2A5052C067B9200AC3335 /* EditorView.swift in Sources */,
 				AEE2A4F72C06784B00AC3335 /* ViewController.swift in Sources */,
+				AEE2A50D2C06856D00AC3335 /* EditorView+CALayerDelegate.swift in Sources */,
+				AEE2A5092C06801B00AC3335 /* EditorView+NSTextViewportLayoutControllerDelegate.swift in Sources */,
+				AEE2A50B2C06831A00AC3335 /* TextLayoutFragmentLayer.swift in Sources */,
 				AEE2A4F52C06784B00AC3335 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
